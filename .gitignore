@@ -1,0 +1,11 @@
+# Temporary files
+**/\#*#
+**/*.bak
+**/*.tmp
+**/*.swp
+**/*~
+**/*.autosave
+
+# jekyll stuff
+_site/
+.sass-cache/
