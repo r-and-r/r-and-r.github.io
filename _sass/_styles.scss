@@ -116,21 +116,25 @@ ul { list-style: circle outside;
 
 li { margin-left: inherit; padding-left: 5px; }
 
-@each $title, $colors in zip($posts, $colorlists) {
-    @include post-colors($title, nth($colors, 1),
-                                 nth($colors, 2),
-                                 nth($colors, 3))
-}
+//@each $title, $colors in zip($posts, $colorlists) {
+//    @include post-colors($title, nth($colors, 1),
+//                                 nth($colors, 2),
+//                                 nth($colors, 3))
+//}
+@include post-colors("home", $blue, $white, $brown);
+@include post-colors("date", $white, $brown, $blue);
+@include post-colors("rsvp", $yellow, $brown, $red);
 
 .landing {
     padding-top: 15vh !important;
-    background: url(/images/improbable_boulder.png) no-repeat center center;
+    background: url(/images/walking.png) no-repeat center center;
     background-size: cover;
     height: 100vh;
     article {
-        @include column(2);
-        @include push(3);
-        color: $white;
+        @include column(3);
+        @include push(1);
+        @include pull(1);
+        color: $yellow;
         h1, h2, h3, h4, h5, h6 {
             font-family: Alegreya Sans;
             letter-spacing: 2px;
@@ -311,13 +315,12 @@ footer {
     }
 
     .landing {
-        padding-top: 5vh !important;
-        background: url('/images/improbable_boulder_mobile.png') no-repeat center center;
+        padding-top: 15vh !important;
+        background: url('/images/walking.png') no-repeat center center;
         background-size: cover;
         article {
-            @include pull(1);
-            @include column(4);
-            h1, h2, h3, h4, h5, h6 { text-align: left; }
+            @include column(5);
+            h1, h2, h3, h4, h5, h6 { text-align: center; }
         }
     }
 }

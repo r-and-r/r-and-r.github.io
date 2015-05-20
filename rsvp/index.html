@@ -1,0 +1,44 @@
+---
+---
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="/css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:500,500italic,900,900italic|Alegreya+Sans+SC:500,500italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <title>{{ site.title }}</title>
+</head>
+
+<body>
+
+{% include navbar.html %}
+
+<main role="main">
+<section id="rsvp" style="height: 100vh">
+    <article>
+        <h2><span style="color: {{site.colors.brown}}">r</span>esponding?
+            <span style="color: {{site.colors.brown}}">s</span>uper.
+            <span style="color: {{site.colors.brown}}">v</span>ery
+            <span style="color: {{site.colors.brown}}">p</span>leased.</h2>
+        <p>We are indeed super very pleased to have you celebrate with us.  To help with that, we have set up a Google Form for you to accept or decline our invitation,
+        and tell us a bit about your culinary life.  Please find it
+        <a href="https://docs.google.com/forms/d/1xrBn2l5mI2H9u4N0C38FR35xWyFTGdiKUAUUFtRWgBg/viewform">here</a>!</p>
+    </article>
+    <!--<article><p>
+        <iframe src="https://docs.google.com/forms/d/1xrBn2l5mI2H9u4N0C38FR35xWyFTGdiKUAUUFtRWgBg/viewform?embedded=true" width="500" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </p></article>-->
+</section>
+</main>
+
+<!--<footer>
+    {% capture foottext %}{% include footer.md %}{% endcapture %}
+    {{ foottext | markdownify }}
+</footer>-->
+
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="site.js"></script>
+</html>
