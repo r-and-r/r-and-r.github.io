@@ -124,6 +124,7 @@ li { margin-left: inherit; padding-left: 5px; }
 @include post-colors("home", $blue, $white, $brown);
 @include post-colors("date", $white, $brown, $blue);
 @include post-colors("rsvp", $yellow, $brown, $red);
+@include post-colors("directions", $green, $white, $brown);
 
 .landing {
     padding-top: 15vh !important;

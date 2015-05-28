@@ -1,0 +1,55 @@
+---
+---
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="/css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:500,500italic,900,900italic|Alegreya+Sans+SC:500,500italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <title>{{ site.title }}</title>
+</head>
+
+<body>
+
+{% include navbar.html %}
+
+<main role="main">
+<section id="directions" style="height: 100vh">
+    <article>
+        <h2>directions to our house</h2>
+        <ol><li>Take Route 93 North crossing into New Hampshire</li>
+            <li>Take Exit 24 (25E/3S Ashland)</li>
+            <li>Follow 3 South to McLoud Road on left (approximately 6 miles)</li>
+        </ol>
+
+        <h4>notes</h4>
+        <ul><li>There is one toll: $1.00 in New Hampshire</li> 
+            <li>Once you exit Route 93, after approximately 1 mile, there will be a fork in the road, bear sharp left to continue on Route 3 South</li>
+            <li>Landmarks along Route 3 South include:</li>
+            <ul><li>Boulders Motel on the right</li>
+                <li>Sign for Squam Lakes Science Center on the left</li>
+                <li>The Manor on Golden Pond on the right</li>
+                <li>Then look for a diamond-shaped, yellow sign - “Road Narrows” - on the right</li>
+                <li>Just past the sign, is McLoud Road on the left</li>
+                <li>(For those of you who like New England directions) If you come to the Squam Lakes Association on the left, you have gone too far.  Turn around and McLoud Road will be the second right after the Association.</li>
+            </ul>
+        </ul>
+    </article>
+    <!--<article><p>
+        <iframe src="https://docs.google.com/forms/d/1xrBn2l5mI2H9u4N0C38FR35xWyFTGdiKUAUUFtRWgBg/viewform?embedded=true" width="500" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </p></article>-->
+</section>
+</main>
+
+<!--<footer>
+    {% capture foottext %}{% include footer.md %}{% endcapture %}
+    {{ foottext | markdownify }}
+</footer>-->
+
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="site.js"></script>
+</html>
